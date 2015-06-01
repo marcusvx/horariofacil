@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<link rel="stylesheet" type="text/css"
+	href="css/jquery.mobile-1.4.5.min.css">
+<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+<script type="text/javascript" src="controllers/semestresController.js"></script>
+
+<title>Semestres</title>
+</head>
+<body>
+	<script>
+		var curso = controller.getNomeCurso();
+		$("#curso").text("teste");
+		document.write(curso + " > ");
+	</script>
+	<div data-role="controlgroup" data-type="horizontal">
+		<button onclick="controller.voltar()"
+			class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-back">Cursos</button>
+	</div>
+
+	<center>
+		<h3>
+			Exibindo semestres do curso de <div id="curso">1</div>
+		</h3>
+	</center>
+</body>
+</html>
