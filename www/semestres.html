@@ -13,11 +13,10 @@
 </head>
 <body>
 	<script>
-	$(function(){
-		var curso = controller.getNomeCurso();
-		$("#curso").text(curso);
-	});
-		
+		$(function() {
+			var curso = controller.getNomeCurso();
+			$("#curso").text(curso);
+		});
 	</script>
 	<div data-role="controlgroup" data-type="horizontal">
 		<button onclick="controller.voltar()"
@@ -26,8 +25,12 @@
 
 	<center>
 		<h3>
-			Exibindo semestres do curso de <div id="curso">1</div>
+			Exibindo semestres do curso de
+			<div id="curso">1</div>
 		</h3>
+
+		<div data-role="controlgroup"></div>
+
 	</center>
 </body>
 </html>
