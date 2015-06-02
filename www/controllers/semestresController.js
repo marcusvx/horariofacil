@@ -8,7 +8,7 @@ if (itens.length > 1) {
 
 var controller = {
 	getNomeCurso : function() {
-		return itens[0];
+		return window.decodeURIComponent(itens[0]);
 	},
 	voltar: function(){
 		location.href = "turmas.html";
